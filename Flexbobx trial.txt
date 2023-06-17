@@ -1,0 +1,43 @@
+<!DOCTYLE html>
+<html>
+<head>
+	<meta="utf-8"/>
+	<meta name="viewport" content="width=device-width;initial-scale:1;maximum-scale:1"/>
+	<title>Flexbox</title>
+	<style type="text/css">
+		main{display:flex;flex-wrap:wrap;align-items:stretch;justify-content:center}
+		main>.item{flex:none;width:270px;background-color:pink;margin:10px}
+
+		nav{display:flex}
+		nav>.logo{background-color:red;flex:none;width:100px;
+			text-align:center}
+		nav>.menu{background-color:green;flex:auto;
+			text-align:center}
+		nav>.user{background-color:orange;flex:none;width:100px;
+			text-align:center}
+
+		@media (max-width:1200px){
+		main>.item{width:45%}
+		}
+
+		@media (max-width:500px){
+		main>.item{width:90%}
+		}
+
+	</style>
+</head>
+	
+<body style="margin-top:0px">
+	<nav style="background-color:grey">
+		<div class="logo">Logo</div>
+		<div class="menu">Menu</div>
+		<div class="user">User</div>
+	</nav>
+	<main style="background-color:grey">
+		<div class="item">News 1<br/>HAHA</div>
+		<div class="item">News 2</div>
+		<div class="item">News 3</div>
+		<div class="item">News 4</div>
+	</main>
+</body>
+</html>
